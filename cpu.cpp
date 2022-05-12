@@ -8,7 +8,7 @@ unsigned int veax;
 unsigned int vebx;
 unsigned int vedx;
 unsigned int vecx;
-//æ‰§è¡ŒCPUIDæŒ‡ä»¤
+//Ö´ĞĞCPUIDÖ¸Áî
 void cpuid(unsigned int veax1)
 {
   asm("cpuid"
@@ -18,7 +18,7 @@ void cpuid(unsigned int veax1)
         "=d"(vedx)
       : "a"(veax));
 }
-//åšç§»ä½æ“ä½œï¼ŒæŠŠå¯„å­˜å™¨ä¸­çš„å€¼ä»¥â€œ%dâ€å½¢å¼è¾“å‡º
+//×öÒÆÎ»²Ù×÷£¬°Ñ¼Ä´æÆ÷ÖĞµÄÖµÒÔ¡°%d¡±ĞÎÊ½Êä³ö
 void LM(unsigned int var, uint32_t *vx)
 {
   int i;
